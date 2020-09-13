@@ -25,7 +25,7 @@ export default class Info extends Component {
   };
 
   componentDidMount() {
-    this.myFunc("2020-09-13");
+    this.myFunc("2019-09-13");
   }
 
   myFunc = (date) => {
