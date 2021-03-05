@@ -1,8 +1,8 @@
-import React from "react";
-import { Layout, Typography } from "antd";
-import Info from "./info";
+import React, { ReactElement } from "react";
+import { Layout, Typography, Space } from "antd";
+import { Info } from "./info";
 
-function App() {
+const App = (): ReactElement => {
   const { Header, Footer, Content } = Layout;
 
   return (
@@ -11,6 +11,7 @@ function App() {
         <Typography.Title style={{ color: "white" }}>NASA API</Typography.Title>
       </Header>
       <Content style={{ width: "1440px", margin: "0 auto" }}>
+        <Space />
         <Info />
       </Content>
       <Footer style={{ display: "flex", justifyContent: "center" }}>
@@ -18,6 +19,6 @@ function App() {
       </Footer>
     </Layout>
   );
-}
+};
 
 export default App;
